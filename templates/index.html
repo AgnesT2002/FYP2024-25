@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Audio Prediction</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .box {
+            display: inline-block;
+            padding: 15px 20px;
+            margin: 8px;
+            border-radius: 10px;
+            border: 2px solid #333;
+            background-color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            min-width: 120px;
+            text-align: center;
+        }
+        .highlight {
+            background-color: #b771f3;
+            transform: scale(1.1);
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: rgb(225, 212, 255);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .control-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        #loadingIndicator {
+            display: none;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #560f9d;
+            font-size: 18px;
+        }
+        #playButton {
+            display: none;
+            padding: 12px 30px;
+            background-color: #9858f3;
+            color: white;
+            border: 2px solid #333;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 15px 0;
+            transition: background-color 0.3s;
+        }
+        #playButton:hover {
+            background-color: #5618a2;
+        }
+        #audioPlayer {
+            display: none;
+            margin: 10px auto;
+            width: 80%;
+        }
+        .file-input-container {
+            text-align: center;
+            margin: 20px auto;
+            width: 100%;
+        }
+        #fileInput {
+            margin: 0 auto;
+            display: block;
+        }
+        .labels-container {
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            width: 220px;
+            margin: 0 auto;
+        }
+        #errorMessage {
+            color: red;
+            font-weight: bold;
+            display: none;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Music Visualization</h1>
+        <h4>Upload your audio and wait for the magic to happen!</h4>
+        <h5>Play your audio and see the predicted labels for each segment.</h5>
+        
+        <div class="file-input-container">
+            <input type="file" id="fileInput" accept="audio/*">
+        </div>
+        
+        <div class="control-center">
+            <div id="loadingIndicator">Processing audio... Please wait</div>
+            <div id="errorMessage"></div>
+            <button id="playButton">Start Playback</button>
+            <audio id="audioPlayer" controls></audio>
+        </div>
+
+        <div class="labels-container">
+            <h2>Predicted Labels:</h2>
+            <div id="labels">
+                <div class="box" data-label="good-sound">Good Sound</div>
+                <div class="box" data-label="crescendo">Crescendo</div>
+                <div class="box" data-label="decrescendo">Decrescendo</div>
+                <div class="box" data-label="tremolo">Tremolo</div>
+                <div class="box" data-label="vibrato">Vibrato</div>
+                <div class="box" data-label="errors">Errors</div>
+                <div class="box" data-label="bad-pitch">Bad Pitch</div>
+                <div class="box" data-label="bad-dynamics">Bad Dynamics</div>
+                <div class="box" data-label="bad-timbre">Bad Timbre</div>
+                <div class="box" data-label="bad-richness">Bad Richness</div>
+                <div class="box" data-label="bad-attack">Bad Attack</div>
+                <div class="box" data-label="bad-rhythm">Bad Rhythm</div>
+                <div class="box" data-label="bridge">Bridge</div>
+                <div class="box" data-label="sultasto">Sultasto</div>
+                <div class="box" data-label="pressure">Pressure</div>
+                <div class="box" data-label="rebound">Rebound</div>
+                <div class="box" data-label="scale-good">Scale Good</div>
+                <div class="box" data-label="staccato">Staccato</div>
+                <div class="box" data-label="minor">Minor</div>
+                <div class="box" data-label="dirt">Dirt</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize socket with increased timeout values
+        var socket = io({
+            reconnectionAttempts: 10,
+            reconnectionDelay: 1000,
+            timeout: 300000,  // 5 minutes timeout
+            pingTimeout: 300000,
+            pingInterval: 25000
+        });
+        
+        var predictions = {};  // Store predictions from backend
+        var chunk_size = 5;  // Default value, will be updated dynamically
+        var lastUpdatedChunk = -1;  // Track last updated chunk to prevent redundant updates
+        var audioFile = null;
+        var audioFilename = null;
+        var processingTimeout;
+
+        // Socket connection error handling
+        socket.on('connect_error', function(error) {
+            console.error("Socket connection error:", error);
+            document.getElementById("errorMessage").textContent = 
+                "Connection error. The server may still be processing. Please wait.";
+            document.getElementById("errorMessage").style.display = "block";
+            
+            // Try to reconnect
+            socket.connect();
+        });
+
+        // Socket disconnection handling
+        socket.on('disconnect', function() {
+            console.log("Socket disconnected, attempting to reconnect...");
+            socket.connect();
+        });
+
+        // Keep-alive handler
+        socket.on("keep_alive", function(data) {
+            console.log("Received keep-alive ping", data);
+            // Reset the processing timeout
+            clearTimeout(processingTimeout);
+            processingTimeout = setTimeout(checkProcessingStatus, 60000); // 60 second timeout
+        });
+
+        // Socket event for processing error
+        socket.on("processing_error", function(data) {
+            console.error("Processing error:", data.error);
+            document.getElementById("loadingIndicator").style.display = "none";
+            document.getElementById("errorMessage").textContent = "Error processing audio: " + data.error;
+            document.getElementById("errorMessage").style.display = "block";
+        });
+
+        // Socket event for processing completion
+        socket.on("processing_complete", function(data) {
+            console.log("Processing complete. Predictions received:", data);
+            clearTimeout(processingTimeout);
+            predictions = data.predictions;
+            chunk_size = data.chunk_size;
+            
+            // Hide loading indicator, show play button
+            document.getElementById("loadingIndicator").style.display = "none";
+            document.getElementById("playButton").style.display = "block";
+            document.getElementById("errorMessage").style.display = "none";
+            
+            // If we have the filename, update the audio source
+            if (data.filename) {
+                audioFilename = data.filename;
+            }
+        });
+
+        // Function to check if processing has timed out
+        function checkProcessingStatus() {
+            document.getElementById("errorMessage").textContent = 
+                "Processing is taking longer than expected. The server may still be working.";
+            document.getElementById("errorMessage").style.display = "block";
+        }
+
+        // File input handling
+        document.getElementById("fileInput").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            // Hide audio player and play button, show loading indicator
+            document.getElementById("audioPlayer").style.display = "none";
+            document.getElementById("playButton").style.display = "none";
+            document.getElementById("loadingIndicator").style.display = "block";
+            document.getElementById("errorMessage").style.display = "none";
+            
+            // Store file for later use
+            audioFile = file;
+
+            // Clear highlights when a new file is uploaded
+            clearHighlights();
+            predictions = {};  // Reset predictions
+            lastUpdatedChunk = -1;  // Reset last updated chunk
+
+            const formData = new FormData();
+            formData.append("file", file);
+
+            // Set a timeout to check processing status
+            clearTimeout(processingTimeout);
+            processingTimeout = setTimeout(checkProcessingStatus, 60000); // 60 second timeout
+
+            fetch("/upload", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Upload successful:", data);
+                audioFilename = data.filename;
+                document.getElementById("loadingIndicator").textContent = "Processing audio... Please wait";
+            })
+            .catch(error => {
+                console.error("Upload error:", error);
+                document.getElementById("loadingIndicator").style.display = "none";
+                document.getElementById("errorMessage").textContent = "Error uploading file. Please try again.";
+                document.getElementById("errorMessage").style.display = "block";
+                clearTimeout(processingTimeout);
+            });
+        });
+
+        // Play button handler
+        document.getElementById("playButton").addEventListener("click", function() {
+            const audioPlayer = document.getElementById("audioPlayer");
+            
+            // If we have the server's filename, use that for better reliability
+            if (audioFilename) {
+                audioPlayer.src = "/uploads/" + audioFilename;
+            } else if (audioFile) {
+                // Fallback to local file blob
+                audioPlayer.src = URL.createObjectURL(audioFile);
+            } else {
+                return; // No audio available
+            }
+            
+            audioPlayer.style.display = "block";
+            audioPlayer.play().catch(e => {
+                console.error("Audio playback error:", e);
+                document.getElementById("errorMessage").textContent = "Error playing audio. Please try again.";
+                document.getElementById("errorMessage").style.display = "block";
+            });
+            
+            // Hide play button after starting playback
+            this.style.display = "none";
+        });
+
+        // Update boxes only when crossing a chunk boundary
+        document.getElementById("audioPlayer").addEventListener("timeupdate", function() {
+            var playbackTime = Math.floor(this.currentTime);
+            var currentChunk = Math.floor(playbackTime / chunk_size);  // Use same index as backend
+
+            if (currentChunk !== lastUpdatedChunk) {
+                lastUpdatedChunk = currentChunk;  // Store last updated chunk
+                console.log("Updating predictions for chunk:", currentChunk);
+
+                if (predictions[currentChunk]) {
+                    updateLabels(predictions[currentChunk]);  // Highlight correct labels
+                } else {
+                    clearHighlights();  // Clear if no predictions exist
+                }
+            }
+        });
+
+        // Stop updating when audio is paused, but keep the last highlight
+        document.getElementById("audioPlayer").addEventListener("pause", function() {
+            console.log("Playback paused at:", this.currentTime);
+        });
+
+        // Clear highlights when audio ends
+        document.getElementById("audioPlayer").addEventListener("ended", function() {
+            clearHighlights();
+            // Show play button again for replay
+            document.getElementById("playButton").style.display = "block";
+        });
+
+        function updateLabels(labels) {
+            document.querySelectorAll(".box").forEach(box => {
+                if (labels.includes(box.dataset.label)) {
+                    box.classList.add("highlight");
+                } else {
+                    box.classList.remove("highlight");
+                }
+            });
+        }
+
+        function clearHighlights() {
+            document.querySelectorAll(".box").forEach(box => {
+                box.classList.remove("highlight");
+            });
+        }
+    </script>
+</body>
+</html>
