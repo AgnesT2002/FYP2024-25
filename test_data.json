@@ -1,0 +1,1112 @@
+{
+    "data": [
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0034.wav",
+            "labels": "2, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0049.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0173.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0024.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0051.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0050.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0138.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0067.wav",
+            "labels": "10, 14"
+        },
+        {
+            "wav": "sound_files/violin_raquel_timbre_stability/0033.wav",
+            "labels": "6, 9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0197.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0072.wav",
+            "labels": "17, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0115.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0132.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0074.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0000.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0004.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0307.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0016.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0051.wav",
+            "labels": "17, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0160.wav",
+            "labels": "12, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0042.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0186.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0042.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0033.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0019.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0015.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0238.wav",
+            "labels": "7, 18, 20"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0030.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0308.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0035.wav",
+            "labels": "2, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0132.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0328.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0108.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0086.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0042.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0148.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0043.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0054.wav",
+            "labels": "10, 14"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0129.wav",
+            "labels": "7, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_raquel_timbre_stability/0003.wav",
+            "labels": "6, 9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0119.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0205.wav",
+            "labels": "9, 18"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0034.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0071.wav",
+            "labels": "10, 14"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0040.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0011.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0225.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0025.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0056.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0133.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0042.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0157.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0042.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0068.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0256.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0083.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0212.wav",
+            "labels": "9, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0125.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0068.wav",
+            "labels": "10, 14"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0034.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0038.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0028.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0169.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0058.wav",
+            "labels": "6, 7"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0070.wav",
+            "labels": "17, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0043.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0195.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0101.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0018.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0253.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0196.wav",
+            "labels": "11, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0207.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0064.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0070.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0073.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0052.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0077.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0014.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0227.wav",
+            "labels": "9, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0002.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0004.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0043.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0223.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0063.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0065.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0038.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0035.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0125.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0260.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0098.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0295.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0140.wav",
+            "labels": "12, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0169.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0016.wav",
+            "labels": "11, 15"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0097.wav",
+            "labels": "7, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0038.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0067.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0281.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0149.wav",
+            "labels": "12, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0017.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0326.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0174.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0050.wav",
+            "labels": "6, 7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0045.wav",
+            "labels": "6, 7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0291.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0073.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0196.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0107.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0202.wav",
+            "labels": "11, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0156.wav",
+            "labels": "12, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0024.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0050.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0021.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0160.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0274.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0017.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0039.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0201.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0194.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0001.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0287.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0305.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0009.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0296.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0131.wav",
+            "labels": "12, 18"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0231.wav",
+            "labels": "7, 18, 20"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0105.wav",
+            "labels": "7, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0142.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0005.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0240.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0044.wav",
+            "labels": "10, 14"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0226.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0070.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0006.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0130.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0002.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0091.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0132.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0251.wav",
+            "labels": "7, 18, 19, 20"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0220.wav",
+            "labels": "9, 18"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0178.wav",
+            "labels": "12, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0300.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0022.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0023.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0003.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0045.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0284.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0159.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0090.wav",
+            "labels": "7, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0312.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0319.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0062.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0091.wav",
+            "labels": "7, 18"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0241.wav",
+            "labels": "7, 18, 19, 20"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0006.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_raquel_timbre_stability/0029.wav",
+            "labels": "6, 9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0012.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0028.wav",
+            "labels": "2, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0118.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0211.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0244.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0071.wav",
+            "labels": "6, 7"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0166.wav",
+            "labels": "12, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0272.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0018.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0065.wav",
+            "labels": "17, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0078.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0067.wav",
+            "labels": "17, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0069.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0304.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0232.wav",
+            "labels": "7, 18, 19, 20"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0036.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0246.wav",
+            "labels": "7, 18, 20"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0073.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_timbre_stability/0008.wav",
+            "labels": "6, 9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0140.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0011.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0223.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0040.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0175.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0031.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0037.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0067.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0079.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0022.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0177.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0240.wav",
+            "labels": "7, 18, 19, 20"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0000.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0046.wav",
+            "labels": "2, 3, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0195.wav",
+            "labels": "7"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0054.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0010.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0083.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0308.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0147.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0013.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0248.wav",
+            "labels": "7, 18, 19, 20"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0294.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0029.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0170.wav",
+            "labels": "12, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0117.wav",
+            "labels": "7, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0078.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0077.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0034.wav",
+            "labels": "11, 15"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0258.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0289.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0012.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0278.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0171.wav",
+            "labels": "12, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0129.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0219.wav",
+            "labels": "9, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0213.wav",
+            "labels": "9, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0138.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0236.wav",
+            "labels": "7, 18, 20"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0095.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0123.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0071.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0025.wav",
+            "labels": "2, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0074.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0072.wav",
+            "labels": "10, 14"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0052.wav",
+            "labels": "17, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0271.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0136.wav",
+            "labels": "12, 18"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0157.wav",
+            "labels": "12, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0131.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0000.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0093.wav",
+            "labels": "4, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0306.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0043.wav",
+            "labels": "6, 7"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0299.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0141.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0020.wav",
+            "labels": "2, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0072.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0106.wav",
+            "labels": "7, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0235.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0266.wav",
+            "labels": "10"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0130.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0309.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0121.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0245.wav",
+            "labels": "7, 18, 20"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0220.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0045.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_raquel_timbre_stability/0034.wav",
+            "labels": "6, 9"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0224.wav",
+            "labels": "9, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0227.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0066.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_richness/0005.wav",
+            "labels": "10, 13"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0013.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0100.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0076.wav",
+            "labels": "7, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0120.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0056.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0060.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0244.wav",
+            "labels": "7, 18, 20"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0200.wav",
+            "labels": "11, 18, 19"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0012.wav",
+            "labels": "11, 15"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0019.wav",
+            "labels": "17, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0054.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0102.wav",
+            "labels": "7, 18"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0235.wav",
+            "labels": "9"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0007.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0052.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0123.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0061.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0065.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0065.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0079.wav",
+            "labels": "7, 18"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0110.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings_2/0317.wav",
+            "labels": "11"
+        },
+        {
+            "wav": "sound_files/violin_raquel_dynamics_stability/0141.wav",
+            "labels": "6, 8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_timbre_stability/0001.wav",
+            "labels": "6, 9"
+        },
+        {
+            "wav": "sound_files/violin_raquel_attack/0062.wav",
+            "labels": "11, 16"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0032.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_laia_improvement_recordings/0094.wav",
+            "labels": "8"
+        },
+        {
+            "wav": "sound_files/violin_raquel_reference/0051.wav",
+            "labels": "1"
+        },
+        {
+            "wav": "sound_files/violin_raquel_pitch_stability/0016.wav",
+            "labels": "5, 7"
+        },
+        {
+            "wav": "sound_files/violin_violin_scales_laia_recordings/0179.wav",
+            "labels": "12, 18, 19"
+        }
+    ]
+}
